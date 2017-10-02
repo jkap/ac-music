@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF02D6171F81C66700E08C15 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02D6151F81C66700E08C15 /* PreferencesWindow.swift */; };
+		CF02D6181F81C66700E08C15 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF02D6161F81C66700E08C15 /* PreferencesWindow.xib */; };
+		CF02D61B1F81CAF600E08C15 /* Animal Forest in Resources */ = {isa = PBXBuildFile; fileRef = CF02D61A1F81CAF600E08C15 /* Animal Forest */; };
+		CF02D61E1F81CC0F00E08C15 /* DefaultPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF02D61D1F81CC0F00E08C15 /* DefaultPreferences.plist */; };
+		CF02D6201F81CE1400E08C15 /* New Leaf in Resources */ = {isa = PBXBuildFile; fileRef = CF02D61F1F81CE1200E08C15 /* New Leaf */; };
+		CF26DEE01F81622A00CDFF6B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26DEDF1F81622A00CDFF6B /* AudioPlayer.swift */; };
+		CF26DEE51F816E2700CDFF6B /* PlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26DEE41F816E2700CDFF6B /* PlaybackView.swift */; };
 		CF6288191F78524600C34ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6288181F78524600C34ABD /* AppDelegate.swift */; };
 		CF62881B1F78524600C34ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF62881A1F78524600C34ABD /* Assets.xcassets */; };
 		CF62881E1F78524600C34ABD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF62881C1F78524600C34ABD /* MainMenu.xib */; };
+		CF6288271F78558800C34ABD /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6288261F78558800C34ABD /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF6288151F78524600C34ABD /* ac-menubar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ac-menubar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF02D6151F81C66700E08C15 /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		CF02D6161F81C66700E08C15 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		CF02D61A1F81CAF600E08C15 /* Animal Forest */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Animal Forest"; path = "audio/Animal Forest"; sourceTree = "<group>"; };
+		CF02D61D1F81CC0F00E08C15 /* DefaultPreferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultPreferences.plist; sourceTree = "<group>"; };
+		CF02D61F1F81CE1200E08C15 /* New Leaf */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "New Leaf"; path = "audio/New Leaf"; sourceTree = "<group>"; };
+		CF26DEDF1F81622A00CDFF6B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		CF26DEE41F816E2700CDFF6B /* PlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackView.swift; sourceTree = "<group>"; };
+		CF4A41EC1F81EA970087615C /* AC Music.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AC Music.entitlements"; sourceTree = "<group>"; };
+		CF6288151F78524600C34ABD /* AC Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6288181F78524600C34ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF62881A1F78524600C34ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF62881D1F78524600C34ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CF62881F1F78524600C34ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6288201F78524600C34ABD /* ac_menubar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ac_menubar.entitlements; sourceTree = "<group>"; };
+		CF6288261F78558800C34ABD /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		CF9FC3201F78BB140061005F /* ac-menubar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ac-menubar.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +50,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF02D61C1F81CB1600E08C15 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				CF02D61F1F81CE1200E08C15 /* New Leaf */,
+				CF02D61A1F81CAF600E08C15 /* Animal Forest */,
+			);
+			name = audio;
+			sourceTree = "<group>";
+		};
 		CF62880C1F78524600C34ABD = {
 			isa = PBXGroup;
 			children = (
+				CF4A41EC1F81EA970087615C /* AC Music.entitlements */,
+				CF02D61D1F81CC0F00E08C15 /* DefaultPreferences.plist */,
+				CF02D61C1F81CB1600E08C15 /* audio */,
 				CF6288171F78524600C34ABD /* ac-menubar */,
 				CF6288161F78524600C34ABD /* Products */,
 			);
@@ -43,7 +73,7 @@
 		CF6288161F78524600C34ABD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF6288151F78524600C34ABD /* ac-menubar.app */,
+				CF6288151F78524600C34ABD /* AC Music.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +81,15 @@
 		CF6288171F78524600C34ABD /* ac-menubar */ = {
 			isa = PBXGroup;
 			children = (
+				CF9FC3201F78BB140061005F /* ac-menubar.entitlements */,
 				CF6288181F78524600C34ABD /* AppDelegate.swift */,
+				CF6288261F78558800C34ABD /* StatusMenuController.swift */,
 				CF62881A1F78524600C34ABD /* Assets.xcassets */,
 				CF62881C1F78524600C34ABD /* MainMenu.xib */,
+				CF02D6151F81C66700E08C15 /* PreferencesWindow.swift */,
+				CF02D6161F81C66700E08C15 /* PreferencesWindow.xib */,
+				CF26DEDF1F81622A00CDFF6B /* AudioPlayer.swift */,
+				CF26DEE41F816E2700CDFF6B /* PlaybackView.swift */,
 				CF62881F1F78524600C34ABD /* Info.plist */,
 				CF6288201F78524600C34ABD /* ac_menubar.entitlements */,
 			);
@@ -63,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF6288141F78524600C34ABD /* ac-menubar */ = {
+		CF6288141F78524600C34ABD /* AC Music */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF6288231F78524600C34ABD /* Build configuration list for PBXNativeTarget "ac-menubar" */;
+			buildConfigurationList = CF6288231F78524600C34ABD /* Build configuration list for PBXNativeTarget "AC Music" */;
 			buildPhases = (
 				CF6288111F78524600C34ABD /* Sources */,
 				CF6288121F78524600C34ABD /* Frameworks */,
@@ -75,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = "ac-menubar";
+			name = "AC Music";
 			productName = "ac-menubar";
-			productReference = CF6288151F78524600C34ABD /* ac-menubar.app */;
+			productReference = CF6288151F78524600C34ABD /* AC Music.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CF6288101F78524600C34ABD /* Build configuration list for PBXProject "ac-menubar" */;
+			buildConfigurationList = CF6288101F78524600C34ABD /* Build configuration list for PBXProject "AC Music" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF6288141F78524600C34ABD /* ac-menubar */,
+				CF6288141F78524600C34ABD /* AC Music */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +155,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF02D61B1F81CAF600E08C15 /* Animal Forest in Resources */,
+				CF02D61E1F81CC0F00E08C15 /* DefaultPreferences.plist in Resources */,
+				CF02D6201F81CE1400E08C15 /* New Leaf in Resources */,
+				CF02D6181F81C66700E08C15 /* PreferencesWindow.xib in Resources */,
 				CF62881B1F78524600C34ABD /* Assets.xcassets in Resources */,
 				CF62881E1F78524600C34ABD /* MainMenu.xib in Resources */,
 			);
@@ -131,6 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF26DEE51F816E2700CDFF6B /* PlaybackView.swift in Sources */,
+				CF6288271F78558800C34ABD /* StatusMenuController.swift in Sources */,
+				CF26DEE01F81622A00CDFF6B /* AudioPlayer.swift in Sources */,
+				CF02D6171F81C66700E08C15 /* PreferencesWindow.swift in Sources */,
 				CF6288191F78524600C34ABD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,13 +303,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "ac-menubar/ac_menubar.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "AC Music.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ac-menubar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.jkap.ac-menubar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -274,13 +321,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "ac-menubar/ac_menubar.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "AC Music.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ac-menubar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.jkap.ac-menubar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -288,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF6288101F78524600C34ABD /* Build configuration list for PBXProject "ac-menubar" */ = {
+		CF6288101F78524600C34ABD /* Build configuration list for PBXProject "AC Music" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF6288211F78524600C34ABD /* Debug */,
@@ -297,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF6288231F78524600C34ABD /* Build configuration list for PBXNativeTarget "ac-menubar" */ = {
+		CF6288231F78524600C34ABD /* Build configuration list for PBXNativeTarget "AC Music" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF6288241F78524600C34ABD /* Debug */,
